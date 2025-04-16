@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+  <h1>Roads</h1>
+  <ul>
+    {% for road in road_list %}
+      <li>{{ road.road_id }}</li>
+    {% endfor %}
+
+  </ul>
+{% endblock %}
